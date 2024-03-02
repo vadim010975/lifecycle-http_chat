@@ -1,0 +1,48 @@
+.modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.loader {
+  display: flex;
+  gap: 10px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #333; /* Placeholder, will be overwritten by animation */
+  animation: leap 0.6s infinite ease-in-out;
+}
+
+.circle:nth-child(1) {
+  animation-delay: 0s;
+  background-color: violet;
+}
+
+.circle:nth-child(2) {
+  animation-delay: 0.2s;
+  background-color: purple;
+}
+
+.circle:nth-child(3) {
+  animation-delay: 0.4s;
+  background-color: blue;
+}
+
+@keyframes leap {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
