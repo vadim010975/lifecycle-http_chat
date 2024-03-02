@@ -63,6 +63,7 @@ const Chat = () => {
   }
 
   // const handleSubmit = async (event: React.FormEvent) => {
+  /* eslint-disable-next-line */
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     const { target } = event;
